@@ -42,3 +42,17 @@ Egyedi JQL függvények készítése
 
 ### Hasznos manager osztályok
 
+- com.atlassian.sal.api.user.UserManager
+
+- com.atlassian.activeobjects.spi.DataSourceProvider
+
+- com.atlassian.plugins.osgi.javaconfig.OsgiServices
+
+- com.atlassian.jira.util.I18nHelper
+- com.atlassian.jira.security.JiraAuthenticationContext
+- com.atlassian.jira.security.groups.GroupManager
+- com.atlassian.jira.project.ProjectManager
+- com.atlassian.jira.issue.CustomFieldManager
+- com.atlassian.jira.issue.IssueManager
+- com.atlassian.jira.plugin.webresource.JiraWebResourceManager
+- com.atlassian.jira.security.PermissionManager
