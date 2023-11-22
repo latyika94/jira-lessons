@@ -2,7 +2,17 @@
 
 ### Console
 
-Groovy szkriptek futtatása alkalmazáson belül
+Groovy szkriptek futtatása alkalmazáson belül a szkript kontextusban elérhető bármely manager-t, service-t, JVM-ben elérhető objektumot felhasználva.
+
+[logging.groovy](console/logging.groovy)
+- log
+- org.apache.log4j.Logger 
+- groovy.util.logging.Log4j annotáció
+- log szintek beállítása
+- log fájl vizsgálat: atlassian\Application Data\Jira\log\atlassian-jira.log
+
+[managers.groovy]
+- ComponentAccessor (Legjobb barátunk)
 
 ### Jobs
 

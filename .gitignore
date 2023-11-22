@@ -15,3 +15,16 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+.idea/
+/node/
+lib
+*.iml
+node_modules
+.gradle
+build
+/docs/build
+/docs/.cache
+/docs/target
+.bundle
+target/
