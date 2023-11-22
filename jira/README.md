@@ -1,6 +1,4 @@
-# Jira plugin fejlesztési leckék
-
-## Atlassian Jira plugin / ScriptRunner plugin fejlesztési eszközök
+# Atlassian Jira plugin / ScriptRunner plugin fejlesztési eszközök
 
 ### Telepítendő eszközök
 
@@ -29,10 +27,10 @@
 # Oktatási témák
 
 ## [ScriptRunner - Console](src/main/resources/com/jira/lessons/console)
-- [Feladatok](src/main/resources/com/jira/lessons/console/Feladatok.md)
+- [Teszt feladatok](src/main/resources/com/jira/lessons/console/Feladatok.md)
 
 ## [ScriptRunner - Listener](src/main/resources/com/jira/lessons/events)
-- [Feladatok](src/main/resources/com/jira/lessons/events/Feladatok.md)
+- [Teszt feladatok](src/main/resources/com/jira/lessons/events/Feladatok.md)
 
 ## [ScriptRunner - Listener](src/main/resources/com/jira/lessons/fragment)
-- [Feladatok](src/main/resources/com/jira/lessons/fragment/Feladatok.md)
+- [Teszt feladatok](src/main/resources/com/jira/lessons/fragment/Feladatok.md)

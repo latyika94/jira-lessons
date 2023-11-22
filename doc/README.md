@@ -1,75 +1,68 @@
-# Jira plugin fejlesztési leckék
+# lesson_1 - Script Runner segédlet
 
-## Atlassian Jira plugin fejlesztési eszközök
+### Console
 
-### Telepítendő eszközök
+Groovy szkriptek futtatása alkalmazáson belül a szkript kontextusban elérhető bármely manager-t, service-t, JVM-ben elérhető objektumot felhasználva.
 
-- Atlassian Plugin SDK: [Set up the Atlassian Plugin SDK and build a project](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/)
-  - Java JDK 8+ telepítés
-  - Atlassian Plugin SDK telepítés
-- IDE, text editor telepítés
-  - Backend (preferált): [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-    - [Jetbrains Toolbox](https://www.jetbrains.com/lp/toolbox/)
-    - **Pluginek**
-        - Resource Bundle Editor
-  - Frontend (preferált): [Visual Studio Code](https://code.visualstudio.com/)
-    - **Javasolt Pluginek**
-        - Auto Close Tag
-        - Auto Rename Tag
-        - JavaScript (ES6) code snippets
-        - json
-        - npm Intellisense
-        - Prettier
-        - Sass
-        - SCSS
-        - XML
-- Git
+Naplózás
+- log
+- org.apache.log4j.Logger 
+- groovy.util.logging.Log4j annotáció
+- log szintek beállítása
+- log fájl vizsgálat: atlassian\Application Data\Jira\log\atlassian-jira.log
 
-### Hasznos oldalak - Atlassian
+Komponensek
+- ComponentAccessor (Legjobb barátunk)
 
-- [Atlas CLI](https://developer.atlassian.com/server/framework/atlassian-sdk/automatic-plugin-reinstallation-with-quickreload/): Atlassian Plugin SDK konzol parancsok
+### Jobs
 
-  - Főként használt parancsok
-    - `atlas-create-jira-plugin` Jira plugin skeleton Maven projekt inicializálás
-    - `atlas-clean` Build folyamat során készült állományok törlése
-    - `atlas-package` Plugin buildelés és csomagolás .jar fájlba
-    - `atlas-install-plugin` Plugin telepítés a cél Jira alkalmazásra
-    - `atlas-run` Plugin pom.xml alapján localhost development Jira inicializálás
-    - `atlas-run-standalone` Plugin függetlenül localhost dev környezet inicializálás
+Groovy szkriptek futtatása alkalmazáson belül ütemezve
 
-- [Atlassian Developer Server Guides](https://developer.atlassian.com/server/jira/platform/getting-started/)
-- Jira Server
+### Listener
 
-  - [REST API](https://docs.atlassian.com/software/jira/docs/api/REST/9.11.0/)
-  - [Java API](https://docs.atlassian.com/software/jira/docs/api/9.11.0/)
+Alkalmazás eseményekre feliratkozás, egyedi Groovy Script futtatás
 
-- Jira Software Server
+### Fragments
 
-  - [REST API](https://docs.atlassian.com/jira-software/REST/9.11.0/)
+Web UI felület kiegészítés:
 
-- [Atlassian Developer Community](https://community.developer.atlassian.com/)
-- [Atlassian Community](https://community.atlassian.com/)
-- [ScriptRunner for Jira](https://docs.adaptavist.com/sr4js/latest)
+- Web Item
+- Web Panel
 
-#### Backend
+### Resources
 
-- [Active Objects](https://developer.atlassian.com/server/framework/atlassian-sdk/active-objects/) ORM réteg Atlassian alkalmazásokhoz
-- [Többnyelvűsítés](https://developer.atlassian.com/server/framework/atlassian-sdk/internationalising-your-plugin/) i18n support
+Egyedi kapcsolatok definiálása szkriptben való felhasználásra.
 
-#### Frontend
+### JQL Functions + Script Editor
 
-### Hasznos oldalak - ScriptRunner
+Egyedi JQL függvények készítése
 
-- [Groovy Language Specification](https://groovy-lang.org/documentation.html#languagespecification)
+- JqlFunction
+- JqlQueryFunction
+- AbstractScriptedJqlFunction
 
-### Hasznos oldalak - Egyéb
+### Eszközök
 
-- [Getting started with Kotlin/JVM](https://kotlinlang.org/docs/jvm-get-started.html#what-s-next)
+- Naplózás (log)
+- Adatbázis lekérdezés futtatás
+- ComponentAccessor
+  - Beépített
+  - getComponent(SearchService)
+- @PluginModule
 
-# Segédletek
+### Hasznos manager osztályok
 
-## [lesson_1 - Script Runner](lesson_1/README.md)
+- com.atlassian.sal.api.user.UserManager
 
-## [lesson_2, lesson_n - Jira plugin fejlesztési alapok](lesson_2/README.md)
+- com.atlassian.activeobjects.spi.DataSourceProvider
 
-## [lesson_n+1 - Saját Jira plugin service-ek használata ScriptRunner-ben](lesson_n1/README.md)
+- com.atlassian.plugins.osgi.javaconfig.OsgiServices
+
+- com.atlassian.jira.util.I18nHelper
+- com.atlassian.jira.security.JiraAuthenticationContext
+- com.atlassian.jira.security.groups.GroupManager
+- com.atlassian.jira.project.ProjectManager
+- com.atlassian.jira.issue.CustomFieldManager
+- com.atlassian.jira.issue.IssueManager
+- com.atlassian.jira.plugin.webresource.JiraWebResourceManager
+- com.atlassian.jira.security.PermissionManager
