@@ -27,10 +27,30 @@
 # Oktatási témák
 
 ## [ScriptRunner - Console](src/main/resources/com/jira/lessons/console)
+### Feladatok
 - [Teszt feladatok](src/main/resources/com/jira/lessons/console/Feladatok.md)
 
+### Dokumentációk
+- [HAPI](https://docs.adaptavist.com/sr4js/latest/hapi)
+- [Script Console](https://docs.adaptavist.com/sr4js/latest/features/script-console)
+- [Jobs](https://docs.adaptavist.com/sr4js/latest/features/jobs)
+
 ## [ScriptRunner - Listener](src/main/resources/com/jira/lessons/events)
+### Feladatok
 - [Teszt feladatok](src/main/resources/com/jira/lessons/events/Feladatok.md)
 
-## [ScriptRunner - Listener](src/main/resources/com/jira/lessons/fragment)
+### Dokumentációk
+- [Listeners](https://docs.adaptavist.com/sr4js/latest/features/listeners)
+
+## [ScriptRunner - Fragment](src/main/resources/com/jira/lessons/fragment)
+### Feladatok
 - [Teszt feladatok](src/main/resources/com/jira/lessons/fragment/Feladatok.md)
+
+### Dokumentációk
+- [Script Fragments](https://docs.adaptavist.com/sr4js/latest/features/script-fragments)
+
+## Resources
+## Script Editor
+## JQL Functions
+
+
