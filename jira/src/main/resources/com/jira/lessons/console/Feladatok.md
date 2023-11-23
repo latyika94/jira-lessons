@@ -1,4 +1,4 @@
-## ScriptRunner Console feladatok: 
+## ScriptRunner Console feladatok
 
 ### 1. feladat
 Listázzuk ki az összes projekt kulcsát és nevét, illetve azok vezetőjének nevét és e-mail címét

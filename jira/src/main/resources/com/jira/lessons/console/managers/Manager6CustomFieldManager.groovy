@@ -24,7 +24,8 @@ def issue = issueManager.getIssueObject(issueKey)
 logger.info("${issueKey} ${customFieldName} értéke: ${issue.getCustomFieldValue(ipCustomField)}")
 
 //IP customfield értéke TES-32 feladaton
-issue.getCustomFieldValue(ipCustomFieldById)
+def cfValue = issue.getCustomFieldValue(ipCustomFieldById)
+logger.info("cfValue type: ${cfValue.class.name}")
 
 //IP customfield érték módosítás
 issue.setCustomFieldValue(ipCustomField, "IP mező új értéke konzolból")

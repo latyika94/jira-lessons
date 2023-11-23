@@ -7,6 +7,8 @@ A panel megjelenésének feltétele:
 - A `totalWorklog` customfield értéke nagyobb, mint 0
 - Vagy a `deletedWorklog` customfield értéke nagyobb, mint 0 az adott feladaton
 
+Amennyiben valamelyik mező még nincs töltve (null értéke van), akkor a cella értékben a `Nincs töltve` felirat jelenjen meg.
+
 **Fragment megjelenése (HTML táblázat)**
 
 | Összes munkanapló száma | Törölt munkanaplók száma |
