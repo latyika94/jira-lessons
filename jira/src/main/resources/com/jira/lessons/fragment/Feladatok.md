@@ -1,6 +1,5 @@
-## ScriptRunner Listener feladatok
+## ScriptRunner Fragment feladatok
 
-### 1. feladat
 Az Event Listener fejezetben elkészített 2. feladatra épülve ([Feladatok.md](..%2Fevents%2FFeladatok.md)) hozzunk létre egy HTML web panel fragmentet.
 
 A panel megjelenésének feltétele:
@@ -9,14 +8,25 @@ A panel megjelenésének feltétele:
 
 Amennyiben valamelyik mező még nincs töltve (null értéke van), akkor a cella értékben a `Nincs töltve` felirat jelenjen meg.
 
-**Fragment megjelenése (HTML táblázat)**
+**Fragment megjelenése (AUI stílusú HTML táblázat)**
 
-| Összes munkanapló száma | Törölt munkanaplók száma |
-|-------------------------|--------------------------|
-| ${totalWorklog}         | ${deletedWorklog}        |
+| Adat                     | Érték             |
+|--------------------------|-------------------|
+| Összes munkanapló száma  | ${totalWorklog}   |
+| Törölt munkanaplók száma | ${deletedWorklog} |
 
-**Hasznos komponens osztályok**
-- com.atlassian.jira.issue.IssueManager
-- com.atlassian.jira.issue.CustomFieldManager
+Amennyiben a panelt megjelenítő felhasználónak vannak munkanapló rögzítései az adott feladaton, akkor jelenítsük meg annak darabszámát is a táblázatban (3. sorban). Egyébként ne jelenjen meg a sor.
 
-**Az egyéb paraméterek megadása a készítőre van bízva!**
+A panel tartalmazzon extra információkat is abban az esetben, ha a felhasználó tagja a "worklog-stat-maintainers" csoportnak (létre kell hoznil).
+
+**Extra tartalom:**
+- A táblázat alatt (nem annak részeként) jelenítsük meg "X óra Y perc" alakban az eddig összes ráfordítást (munkanapló órák)
+- Jelenítsük meg az első és az utolsó munkanapló létrehozásának idejét "yyyy-MM-dd HH:mm:ss" alakban.
+
+A statisztika alatt jelenítsünk meg egy gombot, ami elrejti az extra információkat a képernyőn
+
+**Az extra adatok megjelenítési módja a fejlesztőre van bízva!**
+
+
+**Az ScriptRunner objektumok egyéb paramétereinek megadása a készítőre van bízva.**
+**A panel adatainak nem fontos frissülnie, ha módosulnak a munkanaplók.**

@@ -8,7 +8,7 @@ def logger = Logger.getLogger("com.jira.lessons.console.Logger")
 //https://docs.groovy-lang.org/docs/groovy-2.4.0/html/groovy-jdk/java/util/Collection.htmlw
 
 /* Lista sorrendezés */
-def coordinateList = [
+ArrayList<Coordinate> coordinateList = [
         new Coordinate(x: 1, y:1),
         new Coordinate(x: -2, y:10),
         new Coordinate(x: 0, y:-8),
