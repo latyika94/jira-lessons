@@ -8,7 +8,7 @@
     }
 
     function adminFunction() {
-        window.open("https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/WhatIDo.jpg")
+        window.open("https://d34smkdb128qfi.cloudfront.net/images/librariesprovider2/blogs/2016/08/stormtrooper-sad-meme-1.jpg?sfvrsn=2bee113a_3")
     }
 
     $(document).on('click', '#my-custom-issue-stat-close-button', closePanel);

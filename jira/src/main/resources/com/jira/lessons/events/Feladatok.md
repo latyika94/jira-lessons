@@ -20,7 +20,9 @@ Hozzunk létre két új customfield-et, de csak a C1SP projekt feladataira, mely
 1. Mutatja a feladaton lévő összes munkanapló számát (totalWorklog)
 2. Mutatja az eddig törölt munkanaplók számát (deletedWorklog)
 
-Hozzuk létre a megfelelő ScriptRunner Listenereket, melyek töltik a fenti két mezőt a munkanaplók módosítása esetén.
+Hozzuk létre a ScriptRunner Listenert, mely(ek) töltik a fenti két mezőt a munkanaplók módosítása esetén.
+
+**Segítség**: Ne "IssueEvent"-re készítsük a listener-t, amit a példa szkriptben láthattunk.
 
 **Hasznos komponens osztályok**
 - com.atlassian.jira.issue.IssueManager

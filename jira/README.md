@@ -41,6 +41,7 @@
 
 ### Dokumentációk
 - [Listeners](https://docs.adaptavist.com/sr4js/latest/features/listeners)
+- Eventek Java API dokumentáció: [Jira API com.atlassian.jira.event](https://docs.atlassian.com/software/jira/docs/api/9.11.0/overview-summary.html)
 
 ## [ScriptRunner - Fragment](src/main/resources/com/jira/lessons/fragment)
 ### Feladatok
@@ -48,6 +49,7 @@
 
 ### Dokumentációk
 - [Script Fragments](https://docs.adaptavist.com/sr4js/latest/features/script-fragments)
+- [Atlassian AUI](https://aui.atlassian.com/aui/latest/docs/getting-started.html)
 
 ## Resources
 ## Script Editor

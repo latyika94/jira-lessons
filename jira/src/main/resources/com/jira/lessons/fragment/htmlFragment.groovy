@@ -2,7 +2,6 @@ package com.jira.lessons.fragment
 
 import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.issue.Issue
-import com.atlassian.sal.api.user.UserManager
 
 Issue issue = context.issue as Issue
 
@@ -28,7 +27,7 @@ def isAdminUser = groupManager.isUserInGroup(loggedInUser, groupManager.getGroup
 def adminUserFunction = ""
 
 if(isAdminUser) {
-    adminUserFunction += """<button class="aui-button aui-button-primary margin-top margin-left" id="my-custom-issue-stat-admin-button">Admin funkció</button>"""
+    adminUserFunction += """<button class="aui-button aui-button-primary margin-top margin-left" id="my-custom-issue-stat-admin-button">Life as Sysadmin</button>"""
 }
 
 writer.write("""
