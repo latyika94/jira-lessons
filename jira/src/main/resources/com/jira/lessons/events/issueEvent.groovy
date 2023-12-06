@@ -2,8 +2,9 @@ package com.jira.lessons.events
 
 import com.adaptavist.hapi.jira.issues.Issues
 import com.atlassian.jira.event.issue.IssueEvent
-import org.apache.log4j.Logger
 import com.atlassian.jira.event.type.EventType
+import org.apache.log4j.Logger
+
 
 def logger = Logger.getLogger("com.jira.lessons.events.Logger")
 

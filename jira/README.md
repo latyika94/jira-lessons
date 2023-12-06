@@ -52,7 +52,19 @@
 - [Atlassian AUI](https://aui.atlassian.com/aui/latest/docs/getting-started.html)
 
 ## Resources
+### Dokumentáció
+- [Resources](https://docs.adaptavist.com/sr4js/latest/features/resources)
+
 ## Script Editor
+### Dokumentáció
+- [Script Editor](https://docs.adaptavist.com/sr4js/latest/features/script-editor)
+
 ## JQL Functions
+### Dokumentáció
+- [JQL Functions](https://docs.adaptavist.com/sr4js/latest/features/jql-functions)
+- [Included JQL Functions](https://docs.adaptavist.com/sr4js/latest/features/jql-functions/included-jql-functions)
+- [Custom JQL Functions](https://docs.adaptavist.com/sr4js/latest/features/jql-functions/custom-jql-functions)
+### Feladatok
+- [Teszt feladatok](src/main/resources/com/onresolve/jira/groovy/jql/Feladatok.md)
 
 
