@@ -58,7 +58,7 @@ class IssueSummaryLongerThanJql extends AbstractScriptedJqlFunction implements J
         return "issueSummaryLongerThan"
     }
 
-    //A QueryLiteral visszaadott értékei (id - azonosítói) Version típusú objektumhoz tartozik
+    //A QueryLiteral visszaadott értékei (id - azonosítói) Issue típusú objektumhoz tartozik
     @Override
     JiraDataType getDataType() {
         JiraDataTypes.ISSUE
@@ -66,14 +66,18 @@ class IssueSummaryLongerThanJql extends AbstractScriptedJqlFunction implements J
 
     @Override
     List<QueryLiteral> getValues(QueryCreationContext queryCreationContext, FunctionOperand operand, TerminalClause terminalClause) {
+        //Lekérdezzük a JQL 1. paraméterben megadott értéket és int-et csinálunk belőle
         Integer length = operand.args.first()?.toInteger()
 
+        //Lekérdezzük az összes projektet, melyhez hozzáfér a JQL-t futtató felhasználó
         List<Issue> issues = projectService.getAllProjects(queryCreationContext.applicationUser).get().collect {
+            //Lekérdezzük az összes issue id-t a projektekből és Issue objektumot csinálunk belőlük
             issueManager.getIssueIdsForProject(it.id).collect {
                 issueManager.getIssueObject(it)
             }
-        }.flatten() as List<Issue>
+        }.flatten() as List<Issue> //A List<List<Issue>>-ból List<Issue>-t csinálunk
 
+        //Megkeressük az összes olyan issue-t, melynek összefoglalója, legalább {length} méretű
         issues.findAll {
             it.summary.length() >= length
         }.collect {

@@ -32,30 +32,7 @@ fixVersion in versionReleaseDateIsBefore()
 fixVersion in versionReleaseDateIsBefore("2023-10-10")
 ```
 
-## 3. feladat
-Készítsünk egy olyan JQL függvényt, mely az issue-nak a kommentjeire szűr.
-
-**Paraméterek**
-1. Kommentek száma (Opcionális): Azokat a feladatokat kapjuk vissza, melyen legalább annyi komment van, amekkorát megadunk.
-2. Felhasználó név (Opcionális): Azokat a feladatokat szűri le, ahol a feladaton van az adott felhasználónak kommentje (ApplicationUser.name mezőre szűrjünk)
-
-Mind a két paraméter legyen opcionálisan megadandó, azaz lehessen szűrni a következő módszerek szerint:
-1. Szűrés csak komment számra
-2. Szűrés csak felhasználóra
-3. Mind a két paraméter megadása esetén arra szűrjön, hogy az adott felhasználónak a megadott számú kommentje van legalább a feladaton
-4. Ha egy paraméter sincs megadva, akkor dobjunk Exception-t
-
-**A feladat megoldáshoz a `JqlFunction` implementációt használjuk.**
-
-#### JQL futtatásra példa
-```sql
-issue in issueCommentCount(10)
-issue in issueCommentCount(10, "laszlo.majnar")
-issue in issueCommentCount(null, "laszlo.majnar")
-issue in issueCommentCount() //Hiba
-```
-
-## 4. feladat (JQLQueryFunction)
+## 3. feladat (JQLQueryFunction)
 Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, amik a paraméterben megadott percnél korábban lettek módosítva és a `JQLQueryFunction` implementációt használja.
 
 **Paraméterek**
@@ -63,10 +40,10 @@ Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, am
 
 #### JQL futtatásra példa
 ```sql
-issueFunctions in issueChangedBeforeInMinutes(60)
+issueFunction in issueChangedBeforeInMinutes(60)
 ```
 
-## 5. feladat (JQLQueryFunction - SQL)
+## 4. feladat (JQLQueryFunction - SQL)
 Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, melyeknek a projektje a megadott projekt kategóriában szerepel (SQL-lel szűrjünk).
 
 **Paraméterek**
@@ -79,5 +56,5 @@ SQL Segítség: [How to list all projects in a specific Project Category](https:
 
 #### JQL futtatásra példa
 ```sql
-issueFunctions in projectCategoryIs("Software Development")
+issueFunction in projectCategoryIs("Software Development")
 ```

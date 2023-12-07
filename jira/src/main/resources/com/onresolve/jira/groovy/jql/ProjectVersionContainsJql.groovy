@@ -67,15 +67,18 @@ class ProjectVersionContainsJql extends AbstractScriptedJqlFunction implements J
         /* JQL paraméterek (argumentumok) lekérése, beállítása */
         def containsValue = operand.args.first()
         def containsCaseSensitive = false
+        //Ha van megadva 2. paraméter is
         if(operand.args.size() >= 2) {
             containsCaseSensitive =  operand.args.get(1).toLowerCase() == "true"
         }
 
         /* Leszűrjük az argumentumok alapján az összes olyan verziót, melynek neve tartlamazza a keresett kifejezést*/
         versionManager.allVersions.findAll {
+            //Case sensitive szűrés
             if(containsCaseSensitive) {
                 it.name.contains(containsValue)
             } else {
+                //Case insensitive szűrés
                 it.name.containsIgnoreCase(containsValue)
             }
         }.findAll {
