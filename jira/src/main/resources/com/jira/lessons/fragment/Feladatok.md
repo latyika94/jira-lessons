@@ -32,3 +32,9 @@ A statisztika alatt jelenítsünk meg egy gombot, ami elrejti/megjeleníti az ex
 
 **Az ScriptRunner objektumok egyéb paramétereinek megadása a készítőre van bízva.**
 **A panel adatainak nem fontos frissülnie, ha módosulnak a munkanaplók.**
+
+### Feladat megoldása
+
+- [resource-ok](solutions/resources)
+- [Fragment Condition](solutions/task1Condition.groovy)
+- [Fragment Provider](solutions/task1Provider.groovy)

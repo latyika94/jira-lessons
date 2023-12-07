@@ -1,6 +1,6 @@
 ## ScriptRunner Listener feladatok
 
-### 1. feladat
+## 1. feladat
 Feladatunk, hogy az issue-n megjelenő komment szövegét módosítsuk a következő esetben:
 
 - Ha a komment tulajdonosa (author) a feladat projektjének vezetője (project lead), akkor a komment szövegét módosítani kell a lenti minta szerint.
@@ -14,8 +14,12 @@ A `FONTOS!` szöveg legyen félkövér. Ennek formátumát a megjegyzés mező "
 
 **Hasznos komponens osztályok**
 - com.atlassian.jira.issue.comments.CommentManager
+- 
+### Feladat megoldása
 
-### 2. feladat
+- [task1.groovy](solutions/task1.groovy)
+
+## 2. feladat
 Hozzunk létre két új customfield-et, de csak a C1SP projekt feladataira, mely a munkanapló változásokat számolja a feladaton. 
 1. Mutatja a feladaton lévő összes munkanapló számát (totalWorklog)
 2. Mutatja az eddig törölt munkanaplók számát (deletedWorklog)
@@ -30,3 +34,7 @@ Hozzuk létre a ScriptRunner Listenert, mely(ek) töltik a fenti két mezőt a m
 - com.atlassian.jira.issue.index.IssueIndexingService
 
 **Ne feledjük, hogy issue customfield értékének módosítása során érdemes újraindexelni az érintett feladatot, amennyiben nem a HAPI-t használjuk!**
+
+### Feladat megoldása
+
+- [task2.groovy](solutions/task2.groovy)
