@@ -15,6 +15,10 @@ project in projectLeadIs("laszlo.majnar")
 project in projectLeadIs("laszlo.majnar, tamas.lamfalusi")
 ```
 
+### Feladat megoldása
+
+- [task1ProjectLeadIsJql.groovy](solutions/task1ProjectLeadIsJql.groovy)
+
 ## 2. feladat
 Készítsünk egy olyan JQL  függvényt, ami verzió (Version) típusra szűr és a verzió kiadási dátumára szűr a megadott paraméter alapján
 
@@ -33,6 +37,10 @@ fixVersion in versionReleaseDateIsBefore()
 fixVersion in versionReleaseDateIsBefore("2023-10-10")
 ```
 
+### Feladat megoldása
+
+- [task2VersionReleaseInPastJql.groovy](solutions/task2VersionReleaseInPastJql.groovy)
+
 ## 3. feladat (JQLQueryFunction)
 Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, amik a paraméterben megadott percnél korábban lettek módosítva és a `JQLQueryFunction` implementációt használja.
 
@@ -43,6 +51,10 @@ Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, am
 ```sql
 issueFunction in issueChangedBeforeInMinutes(60)
 ```
+
+### Feladat megoldása
+
+- [task3IssueChangedBeforeInMinutesJqlQuery.groovy](solutions/task3IssueChangedBeforeInMinutesJqlQuery.groovy)
 
 ## 4. feladat (JQLQueryFunction - SQL)
 Készítsünk egy olyan JQL függvényt, ami visszaadja azokat a feladatokat, melyeknek a projektje a megadott projekt kategóriában szerepel (SQL-lel szűrjünk).
@@ -59,3 +71,7 @@ SQL Segítség: [How to list all projects in a specific Project Category](https:
 ```sql
 issueFunction in projectCategoryIs("Software Development")
 ```
+
+### Feladat megoldása
+
+- [task4IProjectCategoryIsSqlJqlQuery.groovy](solutions/task4IProjectCategoryIsSqlJqlQuery.groovy)
