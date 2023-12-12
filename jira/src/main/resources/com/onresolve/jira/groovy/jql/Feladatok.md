@@ -12,6 +12,7 @@ A felhasználó lista megadás szintaktikája a fejlesztőre van bízva, viszont
 ```sql
 project in projectLeadIs()
 project in projectLeadIs("laszlo.majnar")
+project in projectLeadIs("laszlo.majnar, tamas.lamfalusi")
 ```
 
 ## 2. feladat
